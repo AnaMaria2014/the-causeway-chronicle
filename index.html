@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Causeway Chronicle</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Lora:wght@400;500;600&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- BACK TO TOP BUTTON -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+
+  <!-- DARK MODE TOGGLE -->
+  <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+    <span class="theme-icon">☽</span>
+  </button>
+
+  <div class="page-wrapper">
+
+    <!-- NEWSPAPER HEADER -->
+    <header class="newspaper-header">
+      <p class="top-note">Northern Ireland Travel Notes Since 2026</p>
+      <h1>The Causeway Chronicle</h1>
+      <div class="header-meta">
+        <span>Hidden Places</span>
+        <span>Coastal Roads</span>
+        <span>Forest Trails</span>
+        <span>Old Castles</span>
+      </div>
+    </header>
+
+    <!-- SEARCH BAR -->
+    <div class="search-wrapper">
+      <div class="search-bar">
+        <span class="search-icon">⌕</span>
+        <input type="text" id="searchInput" placeholder="Search places, stories, notes…" autocomplete="off" />
+        <button class="search-clear" id="searchClear" aria-label="Clear search">✕</button>
+      </div>
+      <p class="search-status" id="searchStatus"></p>
+    </div>
+
+    <!-- EDITORIAL GRID -->
+    <main class="front-page" id="mainContent">
+      <a href="giants-causeway.html" class="story-link searchable" data-tags="giant causeway basalt ocean stone coastal featured legend finn mccool county antrim">
+        <article class="main-story">
+          <img src="./images/giant-causeway.jpeg" alt="Giant's Causeway">
+          <div class="story-content">
+            <p class="category">Featured Journey</p>
+            <h2>Where the ocean meets stone: a morning at Giant's Causeway</h2>
+            <p>Wind, salt, basalt and legend — the Causeway remains one of those places that feels older than memory itself.</p>
+          </div>
+        </article>
+      </a>
+
+      <aside class="side-stories">
+        <a href="dark-hedges.html" class="story-link searchable" data-tags="dark hedges trees road atmosphere old moody forest">
+          <article>
+            <img src="./images/the-dark-hedges.jpeg" alt="Dark Hedges">
+            <p class="category">Old Roads</p>
+            <h3>The quiet drama of The Dark Hedges</h3>
+          </article>
+        </a>
+
+        <a href="glenariff.html" class="story-link searchable" data-tags="glenariff forest rain trees waterfall woodland secret green">
+          <article>
+            <img src="./images/glenariff-forest.jpeg" alt="Forest trail">
+            <p class="category">Forest Notes</p>
+            <h3>Glenariff after rain feels like a secret kept by trees</h3>
+          </article>
+        </a>
+
+        <a href="dunluce-castle.html" class="story-link searchable" data-tags="dunluce castle ruins cliff atlantic medieval antrim history dramatic">
+          <article>
+            <img src="./images/dunluce-castle-1.jpeg" alt="Dunluce Castle">
+            <p class="category">Ruins & History</p>
+            <h3>Dunluce — the castle at the edge of everything</h3>
+          </article>
+        </a>
+      </aside>
+    </main>
+
+    <!-- NO RESULTS MESSAGE -->
+    <div class="no-results" id="noResults" style="display:none;">
+      <p>✦</p>
+      <h3>No stories found</h3>
+      <p>Try searching for a place, theme or feeling.</p>
+    </div>
+
+    <!-- FIELD NOTES -->
+    <section class="field-notes" id="fieldNotes">
+      <div class="section-title">
+        <p>Community Journal</p>
+        <h2>Field Notes From Travellers</h2>
+      </div>
+      <div class="notes-grid">
+        <article class="note-card searchable" data-tags="ballintoy harbour cliffs sea mist april">
+          <span>Ballintoy • April 2026</span>
+          <h3>A silver morning by the harbour</h3>
+          <p>"The cliffs were pale in the mist, and the sea looked like old glass."</p>
+        </article>
+        <article class="note-card searchable" data-tags="mussenden wind atlantic temple cliffs march">
+          <span>Mussenden • March 2026</span>
+          <h3>Wind above the Atlantic</h3>
+          <p>"I stood there longer than planned. Some places ask you to be quiet."</p>
+        </article>
+        <article class="note-card searchable" data-tags="cushendun village white cottages narrow lanes february">
+          <span>Cushendun • February 2026</span>
+          <h3>A village that feels handwritten</h3>
+          <p>"White cottages, narrow lanes and the feeling that time had softened."</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- MAP OF MEMORIES -->
+    <section class="memory-map" id="memoryMap">
+      <div>
+        <p class="category">Map of Memories</p>
+        <h2>Places our readers keep returning to</h2>
+      </div>
+      <div class="memory-list">
+        <div>
+          <span>01</span>
+          <h3>The Dark Hedges</h3>
+          <p>For moody photographs and old-road atmosphere.</p>
+        </div>
+        <div>
+          <span>02</span>
+          <h3>Glenariff Forest</h3>
+          <p>For waterfalls, moss, woodland paths and quiet air.</p>
+        </div>
+        <div>
+          <span>03</span>
+          <h3>Ballintoy Harbour</h3>
+          <p>For sea wind, stone walls and cinematic coastal views.</p>
+        </div>
+        <div>
+          <span>04</span>
+          <h3>Mussenden Temple</h3>
+          <p>For cliffs, history and a dramatic view over Downhill beach.</p>
+        </div>
+        <div>
+          <span>05</span>
+          <h3>Dunluce Castle</h3>
+          <p>For ancient ruins, clifftop drama and the feeling of lost grandeur.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- POSTCARD FORM -->
+    <section class="postcard-section">
+      <div class="postcard">
+        <div class="postcard-text">
+          <p class="category">Send a Note</p>
+          <h2>Share your Northern Ireland memory</h2>
+          <p>Tell us about a place that stayed with you — a beach, a forest, a castle, a road, a village or a view.</p>
+        </div>
+        <form class="postcard-form">
+          <input type="text" placeholder="Your name" required>
+          <input type="text" placeholder="Place visited" required>
+          <textarea rows="5" placeholder="Write your travel note..." required></textarea>
+          <button type="submit">Send to the Chronicle</button>
+        </form>
+      </div>
+      <p class="form-message"></p>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <h3>The Causeway Chronicle</h3>
+      <p>A vintage travel journal for Northern Ireland's wild, quiet and beautiful places.</p>
+    </footer>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
